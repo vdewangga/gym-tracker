@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
-import { WorkoutSession } from "@/lib/types";
+import { Template, WorkoutSession } from "@/lib/types";
 
 const DATE_FORMATTER = new Intl.DateTimeFormat("id-ID", {
   month: "short",
@@ -90,9 +90,10 @@ interface ChartPoint {
 
 interface WorkoutChartProps {
   sessions: WorkoutSession[];
+  templates: Template[];
 }
 
-export const WorkoutChart = ({ sessions }: WorkoutChartProps) => {
+export const WorkoutChart = ({ sessions, templates }: WorkoutChartProps) => {
   const chartData = useMemo<ChartPoint[]>(() => {
     const doneSessions: ChartPoint[] = sessions
       .filter((session) => session.status === "done")
@@ -155,6 +156,11 @@ export const WorkoutChart = ({ sessions }: WorkoutChartProps) => {
     1,
     ...metricValues.flatMap((metric) => metric.values),
   );
+  const templateCount = templates.length;
+  const templateLabel =
+    templateCount > 0
+      ? `${templateCount} template${templateCount === 1 ? "" : "s"}`
+      : "Belum ada template";
 
   return (
     <div className="rounded-2xl border border-zinc-200 bg-white px-4 py-4 shadow-sm">
@@ -164,6 +170,7 @@ export const WorkoutChart = ({ sessions }: WorkoutChartProps) => {
           {chartData.length} sesi
         </span>
       </div>
+      <p className="mt-1 text-xs text-zinc-500">{templateLabel}</p>
 
       <div className="mt-3 w-full overflow-x-auto">
         <svg
