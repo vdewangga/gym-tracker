@@ -4,8 +4,11 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { MobileShell } from "../components/MobileShell";
 import { DayCard } from "../components/DayCard";
+import { WorkoutChart } from "../components/WorkoutChart";
+import { ExerciseChart } from "../components/ExerciseChart";
 import { useGymContext } from "../contexts/GymContext";
-import { useMemo } from "react";
+import { Plan, Template } from "../lib/types";
+import { useMemo, useState } from "react";
 
 const WEEK_DAYS = [
   "Monday",
@@ -86,33 +89,22 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="space-y-3">
+        <WorkoutChart sessions={sessions} templates={templates} />
+      </section>
+
+      <section className="space-y-3">
+        <ExerciseChart sessions={sessions} />
+      </section>
+
       {activePlan && (
         <section className="space-y-3">
-          <div className="flex items-center justify-between">
-            <h2 className="text-base font-semibold">Minggu ini</h2>
-            <Link href={`/plans/${activePlan.id}`} className="text-sm font-semibold text-sky-600">
-              Lihat detail
-            </Link>
-          </div>
-          <div className="space-y-3">
-            {activePlan.week.map((day) => {
-              const template = templates.find((tpl) => tpl.id === day.templateId);
-              const dayLabel =
-                day.index === todayIndex
-                  ? `${WEEK_DAYS[day.index]} • Today`
-                  : WEEK_DAYS[day.index];
-              return (
-                <DayCard
-                  key={day.index}
-                  dayLabel={dayLabel}
-                  type={day.type}
-                  templateName={template?.name}
-                  ctaLabel={day.type === "workout" && template ? "Start" : undefined}
-                  onStart={() => handleStart(day.index)}
-                />
-              );
-            })}
-          </div>
+          <WeekAccordion
+            activePlan={activePlan}
+            templates={templates}
+            todayIndex={todayIndex}
+            handleStart={handleStart}
+          />
         </section>
       )}
 
@@ -124,3 +116,69 @@ export default function HomePage() {
     </MobileShell>
   );
 }
+
+interface WeekAccordionProps {
+  activePlan: Plan;
+  templates: Template[];
+  todayIndex: number;
+  handleStart: (dayIndex: number) => void;
+}
+
+const WeekAccordion = ({
+  activePlan,
+  templates,
+  todayIndex,
+  handleStart,
+}: WeekAccordionProps) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const workoutDays = activePlan.week.filter((day) => day.type === "workout");
+
+  return (
+    <details
+      className="rounded-2xl border border-zinc-200 bg-white px-4 py-4 shadow-sm"
+      open={isOpen}
+      onToggle={(event) => setIsOpen(event.currentTarget.open)}
+    >
+      <summary className="flex items-center justify-between gap-3 list-none cursor-pointer">
+        <div>
+          <h2 className="text-base font-semibold">Minggu ini</h2>
+          <p className="text-xs text-zinc-400">
+            {workoutDays.length} workout{workoutDays.length !== 1 ? "s" : ""}
+          </p>
+        </div>
+        <div className="flex items-center gap-3">
+          <Link
+            href={`/plans/${activePlan.id}`}
+            className="text-sm font-semibold text-sky-600"
+            onClick={(event) => event.stopPropagation()}
+          >
+            Lihat detail
+          </Link>
+          <span className="text-xs uppercase tracking-[0.3em] text-zinc-400">
+            {isOpen ? "▾" : "▸"}
+          </span>
+        </div>
+      </summary>
+
+      <div className="mt-3 space-y-3">
+        {activePlan.week.map((day) => {
+          const template = templates.find((tpl) => tpl.id === day.templateId);
+          const dayLabel =
+            day.index === todayIndex
+              ? `${WEEK_DAYS[day.index]} • Today`
+              : WEEK_DAYS[day.index];
+          return (
+            <DayCard
+              key={day.index}
+              dayLabel={dayLabel}
+              type={day.type}
+              templateName={template?.name}
+              ctaLabel={day.type === "workout" && template ? "Start" : undefined}
+              onStart={() => handleStart(day.index)}
+            />
+          );
+        })}
+      </div>
+    </details>
+  );
+};
