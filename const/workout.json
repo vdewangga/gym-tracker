@@ -1,0 +1,860 @@
+[
+  {
+    "name": "Barbell Bench Press",
+    "targetMuscles": ["Chest", "Triceps", "Front Delts"],
+    "description": "Tekan barbell dari dada ke atas dengan punggung atas menempel bench dan kaki menapak kuat. Fokus kontrol turun dan dorong stabil.",
+    "videoList": [],
+    "tags": ["upper", "chest", "triceps", "shoulders", "push"]
+  },
+  {
+    "name": "Dumbbell Bench Press",
+    "targetMuscles": ["Chest", "Triceps", "Front Delts"],
+    "description": "Tekan dumbbell dari sisi dada ke atas. Gerak lebih bebas untuk keseimbangan kiri-kanan dan rentang gerak lebih besar.",
+    "videoList": [],
+    "tags": ["upper", "chest", "triceps", "shoulders", "push", "dumbbell"]
+  },
+  {
+    "name": "Incline Barbell Bench Press",
+    "targetMuscles": ["Upper Chest", "Triceps", "Front Delts"],
+    "description": "Bench incline 20–45 derajat. Turunkan bar ke area dada atas lalu dorong ke atas tanpa mengangkat bahu.",
+    "videoList": [],
+    "tags": ["upper", "chest", "upper-chest", "triceps", "shoulders", "push"]
+  },
+  {
+    "name": "Incline Dumbbell Press",
+    "targetMuscles": ["Upper Chest", "Triceps", "Front Delts"],
+    "description": "Tekan dumbbell di bench incline. Jaga pergelangan lurus dan siku tidak terlalu melebar untuk stabilitas.",
+    "videoList": [],
+    "tags": ["upper", "chest", "upper-chest", "triceps", "shoulders", "push", "dumbbell"]
+  },
+  {
+    "name": "Decline Bench Press",
+    "targetMuscles": ["Lower Chest", "Triceps"],
+    "description": "Bench decline menekankan bagian dada bawah. Pastikan pengaman/spotter dan kontrol bar saat turun.",
+    "videoList": [],
+    "tags": ["upper", "chest", "lower-chest", "triceps", "push"]
+  },
+  {
+    "name": "Push-Up",
+    "targetMuscles": ["Chest", "Triceps", "Front Delts", "Core"],
+    "description": "Tangan di bawah bahu, badan lurus. Turunkan dada mendekati lantai lalu dorong kembali tanpa pinggul turun/naik.",
+    "videoList": [],
+    "tags": ["upper", "chest", "triceps", "shoulders", "core", "push", "bodyweight"]
+  },
+  {
+    "name": "Close-Grip Push-Up",
+    "targetMuscles": ["Triceps", "Chest", "Front Delts"],
+    "description": "Posisi tangan lebih sempit untuk menekankan triceps. Jaga siku mendekati tubuh saat turun.",
+    "videoList": [],
+    "tags": ["upper", "triceps", "chest", "push", "bodyweight"]
+  },
+  {
+    "name": "Weighted Push-Up",
+    "targetMuscles": ["Chest", "Triceps", "Front Delts", "Core"],
+    "description": "Push-up dengan beban (plate/vest). Tambah beban bertahap sambil menjaga teknik tetap rapi.",
+    "videoList": [],
+    "tags": ["upper", "chest", "triceps", "shoulders", "core", "push", "bodyweight"]
+  },
+  {
+    "name": "Chest Dip",
+    "targetMuscles": ["Chest", "Triceps", "Front Delts"],
+    "description": "Badan condong sedikit ke depan untuk fokus dada. Turun sampai dada terasa stretch, lalu dorong naik.",
+    "videoList": [],
+    "tags": ["upper", "chest", "triceps", "shoulders", "push", "bodyweight"]
+  },
+  {
+    "name": "Triceps Dip (Upright)",
+    "targetMuscles": ["Triceps", "Chest"],
+    "description": "Versi dip lebih tegak untuk menekankan triceps. Hindari bahu naik berlebihan.",
+    "videoList": [],
+    "tags": ["upper", "triceps", "chest", "push", "bodyweight"]
+  },
+  {
+    "name": "Cable Chest Fly",
+    "targetMuscles": ["Chest"],
+    "description": "Tarik handle kabel dari sisi ke depan hingga tangan bertemu. Jaga siku sedikit menekuk dan kontrol saat kembali.",
+    "videoList": [],
+    "tags": ["upper", "chest", "isolation", "cable", "push"]
+  },
+  {
+    "name": "Dumbbell Fly",
+    "targetMuscles": ["Chest"],
+    "description": "Buka tangan lebar dengan siku sedikit menekuk hingga dada terasa stretch, lalu rapatkan kembali tanpa mengubah sudut siku.",
+    "videoList": [],
+    "tags": ["upper", "chest", "isolation", "dumbbell", "push"]
+  },
+  {
+    "name": "Pec Deck Fly",
+    "targetMuscles": ["Chest"],
+    "description": "Duduk stabil, tarik lengan ke depan hingga kontraksi dada maksimal. Jangan mengangkat bahu.",
+    "videoList": [],
+    "tags": ["upper", "chest", "isolation", "machine", "push"]
+  },
+  {
+    "name": "Cable Crossover (High-to-Low)",
+    "targetMuscles": ["Chest"],
+    "description": "Kabel dari posisi tinggi ke arah bawah depan untuk fokus dada bawah. Jaga tubuh stabil dan kontrol.",
+    "videoList": [],
+    "tags": ["upper", "chest", "lower-chest", "isolation", "cable", "push"]
+  },
+  {
+    "name": "Cable Crossover (Low-to-High)",
+    "targetMuscles": ["Upper Chest"],
+    "description": "Tarik kabel dari bawah ke atas depan untuk menekankan dada atas. Jangan mengayun badan.",
+    "videoList": [],
+    "tags": ["upper", "chest", "upper-chest", "isolation", "cable", "push"]
+  },
+
+  {
+    "name": "Pull-Up",
+    "targetMuscles": ["Lats", "Upper Back", "Biceps"],
+    "description": "Gantung dengan grip sesuai nyaman, tarik dada mendekati bar, turunkan perlahan sampai lengan lurus.",
+    "videoList": [],
+    "tags": ["upper", "back", "lats", "biceps", "pull", "bodyweight"]
+  },
+  {
+    "name": "Chin-Up",
+    "targetMuscles": ["Biceps", "Lats", "Upper Back"],
+    "description": "Grip supinasi (telapak menghadap diri). Biasanya lebih terasa di biceps. Kontrol turun dengan penuh.",
+    "videoList": [],
+    "tags": ["upper", "back", "lats", "biceps", "pull", "bodyweight"]
+  },
+  {
+    "name": "Assisted Pull-Up",
+    "targetMuscles": ["Lats", "Upper Back", "Biceps"],
+    "description": "Menggunakan band atau mesin asist untuk membantu. Cocok untuk progres menuju pull-up penuh.",
+    "videoList": [],
+    "tags": ["upper", "back", "lats", "biceps", "pull", "machine"]
+  },
+  {
+    "name": "Lat Pulldown",
+    "targetMuscles": ["Lats", "Upper Back", "Biceps"],
+    "description": "Tarik bar ke arah dada atas dengan dada terangkat. Hindari menarik ke belakang leher.",
+    "videoList": [],
+    "tags": ["upper", "back", "lats", "biceps", "pull", "cable", "machine"]
+  },
+  {
+    "name": "Single-Arm Lat Pulldown",
+    "targetMuscles": ["Lats", "Upper Back"],
+    "description": "Pulldown satu tangan untuk fokus sisi tertentu dan memperbaiki ketidakseimbangan.",
+    "videoList": [],
+    "tags": ["upper", "back", "lats", "pull", "cable"]
+  },
+  {
+    "name": "Seated Cable Row",
+    "targetMuscles": ["Mid Back", "Lats", "Biceps"],
+    "description": "Tarik handle ke arah perut sambil menjaga punggung netral. Fokus menarik dengan siku, bukan tangan.",
+    "videoList": [],
+    "tags": ["upper", "back", "mid-back", "lats", "biceps", "pull", "cable"]
+  },
+  {
+    "name": "Chest-Supported Row (Machine)",
+    "targetMuscles": ["Mid Back", "Upper Back", "Rear Delts"],
+    "description": "Dada menempel pad untuk mengurangi cheating. Tarik siku ke belakang sampai kontraksi punggung terasa.",
+    "videoList": [],
+    "tags": ["upper", "back", "rear-delts", "pull", "machine"]
+  },
+  {
+    "name": "One-Arm Dumbbell Row",
+    "targetMuscles": ["Lats", "Mid Back", "Biceps"],
+    "description": "Tumpu satu tangan di bench, tarik dumbbell ke arah pinggang. Jaga pinggul dan bahu tidak memutar berlebihan.",
+    "videoList": [],
+    "tags": ["upper", "back", "lats", "mid-back", "biceps", "pull", "dumbbell"]
+  },
+  {
+    "name": "Barbell Bent-Over Row",
+    "targetMuscles": ["Mid Back", "Lats", "Rear Delts", "Biceps"],
+    "description": "Hip hinge, punggung netral, tarik bar ke arah perut bawah. Hindari membulatkan punggung.",
+    "videoList": [],
+    "tags": ["upper", "back", "lats", "mid-back", "rear-delts", "biceps", "pull", "barbell"]
+  },
+  {
+    "name": "Pendlay Row",
+    "targetMuscles": ["Mid Back", "Lats", "Rear Delts"],
+    "description": "Row dari lantai setiap repetisi. Fokus eksplosif saat tarik, punggung tetap netral dan paralel lantai.",
+    "videoList": [],
+    "tags": ["upper", "back", "lats", "mid-back", "pull", "barbell"]
+  },
+  {
+    "name": "T-Bar Row",
+    "targetMuscles": ["Mid Back", "Lats", "Biceps"],
+    "description": "Tarik handle T-bar ke arah perut. Jaga torso stabil dan kontrol fase turun.",
+    "videoList": [],
+    "tags": ["upper", "back", "lats", "mid-back", "biceps", "pull"]
+  },
+  {
+    "name": "Inverted Row",
+    "targetMuscles": ["Mid Back", "Upper Back", "Biceps"],
+    "description": "Row menggunakan bar rendah. Badan lurus, tarik dada ke bar. Atur tingkat kesulitan dengan posisi kaki.",
+    "videoList": [],
+    "tags": ["upper", "back", "mid-back", "biceps", "pull", "bodyweight"]
+  },
+  {
+    "name": "Straight-Arm Pulldown",
+    "targetMuscles": ["Lats"],
+    "description": "Tarik kabel dengan lengan hampir lurus dari atas ke bawah sampai dekat paha. Fokus pada kontraksi lat.",
+    "videoList": [],
+    "tags": ["upper", "back", "lats", "isolation", "pull", "cable"]
+  },
+  {
+    "name": "Face Pull",
+    "targetMuscles": ["Rear Delts", "Upper Back"],
+    "description": "Tarik rope ke arah wajah dengan siku tinggi. Bagus untuk kesehatan bahu dan postur.",
+    "videoList": [],
+    "tags": ["upper", "shoulders", "rear-delts", "upper-back", "pull", "cable"]
+  },
+  {
+    "name": "Reverse Pec Deck",
+    "targetMuscles": ["Rear Delts", "Upper Back"],
+    "description": "Gerakan membuka lengan ke belakang pada mesin pec deck untuk menekankan rear delts.",
+    "videoList": [],
+    "tags": ["upper", "shoulders", "rear-delts", "upper-back", "pull", "machine"]
+  },
+  {
+    "name": "Shrug (Dumbbell)",
+    "targetMuscles": ["Traps"],
+    "description": "Angkat bahu ke atas dan sedikit ke belakang, tahan 1 detik, turunkan perlahan. Hindari memutar bahu besar-besaran.",
+    "videoList": [],
+    "tags": ["upper", "traps", "pull", "dumbbell"]
+  },
+  {
+    "name": "Shrug (Barbell)",
+    "targetMuscles": ["Traps"],
+    "description": "Shrug dengan barbell untuk beban lebih berat. Jaga leher netral dan gerak singkat terkontrol.",
+    "videoList": [],
+    "tags": ["upper", "traps", "pull", "barbell"]
+  },
+
+  {
+    "name": "Overhead Press (Barbell)",
+    "targetMuscles": ["Shoulders", "Triceps", "Upper Chest"],
+    "description": "Tekan bar dari bahu ke atas kepala. Kencangkan core dan glutes agar punggung tidak hyperextension.",
+    "videoList": [],
+    "tags": ["upper", "shoulders", "triceps", "push", "barbell"]
+  },
+  {
+    "name": "Seated Dumbbell Shoulder Press",
+    "targetMuscles": ["Shoulders", "Triceps"],
+    "description": "Tekan dumbbell dari posisi setinggi telinga ke atas. Duduk stabil untuk mengurangi cheating.",
+    "videoList": [],
+    "tags": ["upper", "shoulders", "triceps", "push", "dumbbell"]
+  },
+  {
+    "name": "Arnold Press",
+    "targetMuscles": ["Shoulders", "Triceps"],
+    "description": "Press dumbbell dengan rotasi dari depan ke atas. Memberi variasi stimulus untuk deltoid.",
+    "videoList": [],
+    "tags": ["upper", "shoulders", "triceps", "push", "dumbbell"]
+  },
+  {
+    "name": "Lateral Raise (Dumbbell)",
+    "targetMuscles": ["Side Delts"],
+    "description": "Angkat dumbbell ke samping sampai sejajar bahu. Jaga siku sedikit menekuk dan bahu tidak naik.",
+    "videoList": [],
+    "tags": ["upper", "shoulders", "side-delts", "isolation", "dumbbell"]
+  },
+  {
+    "name": "Cable Lateral Raise",
+    "targetMuscles": ["Side Delts"],
+    "description": "Lateral raise dengan kabel memberi tension konstan. Gerak pelan dan hindari mengayun.",
+    "videoList": [],
+    "tags": ["upper", "shoulders", "side-delts", "isolation", "cable"]
+  },
+  {
+    "name": "Front Raise (Dumbbell)",
+    "targetMuscles": ["Front Delts"],
+    "description": "Angkat dumbbell ke depan sampai setinggi bahu. Cocok sebagai aksesori, jangan berlebihan jika banyak bench/press.",
+    "videoList": [],
+    "tags": ["upper", "shoulders", "front-delts", "isolation", "dumbbell"]
+  },
+  {
+    "name": "Rear Delt Fly (Dumbbell)",
+    "targetMuscles": ["Rear Delts", "Upper Back"],
+    "description": "Bungkuk dengan punggung netral, buka lengan ke samping-belakang. Fokus merasakan rear delts bekerja.",
+    "videoList": [],
+    "tags": ["upper", "shoulders", "rear-delts", "upper-back", "isolation", "dumbbell"]
+  },
+  {
+    "name": "Upright Row (Cable)",
+    "targetMuscles": ["Side Delts", "Traps"],
+    "description": "Tarik kabel ke atas dekat tubuh sampai dada atas. Gunakan range aman dan grip nyaman untuk bahu.",
+    "videoList": [],
+    "tags": ["upper", "shoulders", "side-delts", "traps", "pull", "cable"]
+  },
+
+  {
+    "name": "Barbell Curl",
+    "targetMuscles": ["Biceps", "Forearms"],
+    "description": "Curl barbell dengan siku tetap di samping tubuh. Hindari mengayun; fokus kontraksi biceps.",
+    "videoList": [],
+    "tags": ["upper", "biceps", "forearms", "pull", "barbell"]
+  },
+  {
+    "name": "Dumbbell Curl",
+    "targetMuscles": ["Biceps", "Forearms"],
+    "description": "Curl dumbbell satu atau dua tangan. Bisa supinasi untuk kontraksi biceps lebih terasa.",
+    "videoList": [],
+    "tags": ["upper", "biceps", "forearms", "pull", "dumbbell"]
+  },
+  {
+    "name": "Hammer Curl",
+    "targetMuscles": ["Brachialis", "Biceps", "Forearms"],
+    "description": "Grip netral seperti memegang palu. Menekankan brachialis dan membantu ketebalan lengan.",
+    "videoList": [],
+    "tags": ["upper", "biceps", "forearms", "pull", "dumbbell"]
+  },
+  {
+    "name": "Incline Dumbbell Curl",
+    "targetMuscles": ["Biceps"],
+    "description": "Duduk di bench incline, lengan menggantung ke bawah untuk stretch biceps. Curl perlahan tanpa mengangkat bahu.",
+    "videoList": [],
+    "tags": ["upper", "biceps", "isolation", "dumbbell", "pull"]
+  },
+  {
+    "name": "Preacher Curl (EZ Bar)",
+    "targetMuscles": ["Biceps"],
+    "description": "Curl di preacher bench untuk membatasi cheating. Jaga kontrol pada fase turun.",
+    "videoList": [],
+    "tags": ["upper", "biceps", "isolation", "barbell", "pull"]
+  },
+  {
+    "name": "Cable Curl",
+    "targetMuscles": ["Biceps"],
+    "description": "Curl dengan kabel untuk tension konstan. Cocok untuk repetisi menengah-tinggi dan kontrol.",
+    "videoList": [],
+    "tags": ["upper", "biceps", "isolation", "cable", "pull"]
+  },
+  {
+    "name": "Triceps Pushdown (Rope)",
+    "targetMuscles": ["Triceps"],
+    "description": "Dorong rope ke bawah sampai siku lurus, lalu kembali perlahan. Jaga siku tetap di samping tubuh.",
+    "videoList": [],
+    "tags": ["upper", "triceps", "isolation", "push", "cable"]
+  },
+  {
+    "name": "Triceps Pushdown (Straight Bar)",
+    "targetMuscles": ["Triceps"],
+    "description": "Pushdown dengan bar untuk beban stabil. Jangan mengayun badan; fokus ekstensi siku.",
+    "videoList": [],
+    "tags": ["upper", "triceps", "isolation", "push", "cable"]
+  },
+  {
+    "name": "Overhead Triceps Extension (Cable)",
+    "targetMuscles": ["Triceps"],
+    "description": "Ekstensi triceps dari atas kepala untuk menekankan long head. Jaga siku mengarah ke depan/atas.",
+    "videoList": [],
+    "tags": ["upper", "triceps", "isolation", "push", "cable"]
+  },
+  {
+    "name": "Skull Crusher (EZ Bar)",
+    "targetMuscles": ["Triceps"],
+    "description": "Turunkan EZ bar ke dekat dahi/atas kepala lalu luruskan siku. Gunakan range nyaman untuk siku.",
+    "videoList": [],
+    "tags": ["upper", "triceps", "isolation", "push", "barbell"]
+  },
+  {
+    "name": "Dumbbell Overhead Triceps Extension",
+    "targetMuscles": ["Triceps"],
+    "description": "Pegang satu dumbbell di atas kepala, turunkan ke belakang kepala lalu luruskan siku. Stabilkan core.",
+    "videoList": [],
+    "tags": ["upper", "triceps", "isolation", "push", "dumbbell"]
+  },
+
+  {
+    "name": "Back Squat (Barbell)",
+    "targetMuscles": ["Quads", "Glutes", "Core"],
+    "description": "Squat dengan bar di punggung atas. Turun dengan kontrol, lutut mengikuti arah jari kaki, naik dorong lantai.",
+    "videoList": [],
+    "tags": ["lower", "quads", "glutes", "core", "compound", "barbell"]
+  },
+  {
+    "name": "Front Squat",
+    "targetMuscles": ["Quads", "Core", "Glutes"],
+    "description": "Bar di depan bahu (front rack). Menekankan quads dan core. Jaga dada tegak dan siku tinggi.",
+    "videoList": [],
+    "tags": ["lower", "quads", "glutes", "core", "compound", "barbell"]
+  },
+  {
+    "name": "Goblet Squat",
+    "targetMuscles": ["Quads", "Glutes", "Core"],
+    "description": "Pegang dumbbell/kettlebell di depan dada. Cocok untuk pemula dan latihan teknik squat.",
+    "videoList": [],
+    "tags": ["lower", "quads", "glutes", "core", "compound", "dumbbell"]
+  },
+  {
+    "name": "Leg Press",
+    "targetMuscles": ["Quads", "Glutes"],
+    "description": "Dorong platform dengan kaki. Atur posisi kaki untuk feel berbeda. Jangan mengunci lutut keras di atas.",
+    "videoList": [],
+    "tags": ["lower", "quads", "glutes", "compound", "machine"]
+  },
+  {
+    "name": "Walking Lunge",
+    "targetMuscles": ["Quads", "Glutes", "Hamstrings"],
+    "description": "Langkah maju bergantian, lutut belakang mendekati lantai. Jaga badan stabil dan langkah konsisten.",
+    "videoList": [],
+    "tags": ["lower", "quads", "glutes", "hamstrings", "compound", "bodyweight"]
+  },
+  {
+    "name": "Reverse Lunge",
+    "targetMuscles": ["Glutes", "Quads", "Hamstrings"],
+    "description": "Langkah ke belakang untuk variasi yang sering lebih ramah lutut. Dorong kembali ke posisi berdiri.",
+    "videoList": [],
+    "tags": ["lower", "glutes", "quads", "hamstrings", "compound"]
+  },
+  {
+    "name": "Bulgarian Split Squat",
+    "targetMuscles": ["Quads", "Glutes", "Hamstrings"],
+    "description": "Kaki belakang di bench. Turun perlahan, jaga lutut depan stabil. Sangat efektif untuk unilateral strength.",
+    "videoList": [],
+    "tags": ["lower", "quads", "glutes", "hamstrings", "compound", "dumbbell"]
+  },
+  {
+    "name": "Step-Up",
+    "targetMuscles": ["Quads", "Glutes", "Hamstrings"],
+    "description": "Naik ke box/bench dengan satu kaki, turunkan terkontrol. Fokus dorong dari kaki di atas, bukan melompat.",
+    "videoList": [],
+    "tags": ["lower", "quads", "glutes", "hamstrings", "compound"]
+  },
+  {
+    "name": "Romanian Deadlift (Barbell)",
+    "targetMuscles": ["Hamstrings", "Glutes", "Lower Back"],
+    "description": "Hip hinge, turunkan bar sepanjang paha ke bawah sampai hamstrings stretch, lalu naik dengan dorong pinggul maju.",
+    "videoList": [],
+    "tags": ["lower", "hamstrings", "glutes", "lower-back", "compound", "barbell"]
+  },
+  {
+    "name": "Romanian Deadlift (Dumbbell)",
+    "targetMuscles": ["Hamstrings", "Glutes"],
+    "description": "RDL dengan dumbbell di sisi tubuh. Jaga punggung netral dan rasakan stretch hamstrings.",
+    "videoList": [],
+    "tags": ["lower", "hamstrings", "glutes", "compound", "dumbbell"]
+  },
+  {
+    "name": "Conventional Deadlift",
+    "targetMuscles": ["Glutes", "Hamstrings", "Back", "Core"],
+    "description": "Angkat bar dari lantai dengan dorong kaki dan pinggul. Jaga punggung netral, bar dekat badan.",
+    "videoList": [],
+    "tags": ["lower", "hamstrings", "glutes", "back", "core", "compound", "barbell"]
+  },
+  {
+    "name": "Sumo Deadlift",
+    "targetMuscles": ["Glutes", "Quads", "Hamstrings", "Core"],
+    "description": "Kaki lebih lebar, tangan di dalam lutut. Biasanya mengurangi range gerak dan menekankan glutes/quads.",
+    "videoList": [],
+    "tags": ["lower", "glutes", "quads", "hamstrings", "core", "compound", "barbell"]
+  },
+  {
+    "name": "Hip Thrust (Barbell)",
+    "targetMuscles": ["Glutes", "Hamstrings"],
+    "description": "Punggung atas di bench, dorong pinggul ke atas sampai sejajar. Tahan kontraksi glutes di puncak.",
+    "videoList": [],
+    "tags": ["lower", "glutes", "hamstrings", "compound", "barbell"]
+  },
+  {
+    "name": "Glute Bridge",
+    "targetMuscles": ["Glutes", "Hamstrings"],
+    "description": "Versi hip thrust di lantai. Dorong pinggul ke atas dan kencangkan glutes di puncak.",
+    "videoList": [],
+    "tags": ["lower", "glutes", "hamstrings", "compound", "bodyweight"]
+  },
+  {
+    "name": "Hamstring Curl (Lying)",
+    "targetMuscles": ["Hamstrings"],
+    "description": "Curl kaki ke arah bokong di mesin. Kontrol turun untuk menambah waktu di bawah tegangan.",
+    "videoList": [],
+    "tags": ["lower", "hamstrings", "isolation", "machine"]
+  },
+  {
+    "name": "Hamstring Curl (Seated)",
+    "targetMuscles": ["Hamstrings"],
+    "description": "Curl hamstrings posisi duduk, sering memberi stretch lebih besar. Cocok untuk repetisi menengah-tinggi.",
+    "videoList": [],
+    "tags": ["lower", "hamstrings", "isolation", "machine"]
+  },
+  {
+    "name": "Leg Extension",
+    "targetMuscles": ["Quads"],
+    "description": "Ekstensi lutut di mesin untuk isolasi quads. Hindari mengunci lutut terlalu keras di puncak.",
+    "videoList": [],
+    "tags": ["lower", "quads", "isolation", "machine"]
+  },
+  {
+    "name": "Calf Raise (Standing)",
+    "targetMuscles": ["Calves"],
+    "description": "Angkat tumit setinggi mungkin lalu turun sampai betis stretch. Gerak penuh dan tahan sebentar di atas.",
+    "videoList": [],
+    "tags": ["lower", "calves", "isolation", "machine"]
+  },
+  {
+    "name": "Calf Raise (Seated)",
+    "targetMuscles": ["Calves"],
+    "description": "Fokus pada soleus. Gunakan range gerak penuh dan tempo terkontrol.",
+    "videoList": [],
+    "tags": ["lower", "calves", "isolation", "machine"]
+  },
+
+  {
+    "name": "Plank",
+    "targetMuscles": ["Core"],
+    "description": "Tahan posisi seperti push-up di siku. Jaga badan lurus, kencangkan perut dan glutes.",
+    "videoList": [],
+    "tags": ["core", "abs", "bodyweight"]
+  },
+  {
+    "name": "Side Plank",
+    "targetMuscles": ["Core", "Obliques"],
+    "description": "Tahan posisi miring di satu siku. Jaga pinggul tidak turun. Cocok untuk obliques dan stabilitas.",
+    "videoList": [],
+    "tags": ["core", "obliques", "bodyweight"]
+  },
+  {
+    "name": "Dead Bug",
+    "targetMuscles": ["Core"],
+    "description": "Berbaring telentang, gerakkan tangan dan kaki berlawanan sambil punggung bawah tetap menempel lantai.",
+    "videoList": [],
+    "tags": ["core", "abs", "bodyweight"]
+  },
+  {
+    "name": "Hanging Leg Raise",
+    "targetMuscles": ["Abs", "Hip Flexors"],
+    "description": "Gantung di bar, angkat kaki lurus/tekuk ke depan. Hindari ayunan; fokus kontrol dan kompresi perut.",
+    "videoList": [],
+    "tags": ["core", "abs", "upper", "bodyweight"]
+  },
+  {
+    "name": "Cable Crunch",
+    "targetMuscles": ["Abs"],
+    "description": "Crunch dengan kabel dari posisi kneeling. Gulung tulang rusuk ke arah pinggul, bukan menarik dengan tangan.",
+    "videoList": [],
+    "tags": ["core", "abs", "cable"]
+  },
+  {
+    "name": "Russian Twist",
+    "targetMuscles": ["Obliques", "Core"],
+    "description": "Duduk dengan badan sedikit condong, putar torso kiri-kanan terkontrol. Bisa pakai beban ringan.",
+    "videoList": [],
+    "tags": ["core", "obliques", "bodyweight"]
+  },
+  {
+    "name": "Back Extension",
+    "targetMuscles": ["Lower Back", "Glutes", "Hamstrings"],
+    "description": "Gerakan hip hinge di hyperextension bench. Fokus pada glutes dan punggung bawah dengan kontrol.",
+    "videoList": [],
+    "tags": ["lower", "lower-back", "glutes", "hamstrings", "posterior-chain"]
+  },
+
+  {
+    "name": "Landmine Press",
+    "targetMuscles": ["Shoulders", "Upper Chest", "Triceps"],
+    "description": "Tekan bar pada landmine dengan arah diagonal. Biasanya lebih ramah bahu dibanding overhead press.",
+    "videoList": [],
+    "tags": ["upper", "shoulders", "chest", "triceps", "push"]
+  },
+  {
+    "name": "Landmine Row",
+    "targetMuscles": ["Mid Back", "Lats", "Biceps"],
+    "description": "Row menggunakan landmine. Tarik handle ke perut, jaga torso stabil dan punggung netral.",
+    "videoList": [],
+    "tags": ["upper", "back", "lats", "mid-back", "biceps", "pull"]
+  },
+  {
+    "name": "Farmer's Carry",
+    "targetMuscles": ["Grip", "Traps", "Core"],
+    "description": "Jalan membawa dumbbell berat di sisi tubuh. Jaga postur tegak, bahu tidak membungkuk.",
+    "videoList": [],
+    "tags": ["upper", "forearms", "traps", "core", "carry", "dumbbell"]
+  },
+  {
+    "name": "Chest-Supported Dumbbell Row",
+    "targetMuscles": ["Mid Back", "Upper Back", "Rear Delts", "Biceps"],
+    "description": "Row dumbbell dengan dada menempel bench incline untuk mengurangi cheating. Tarik siku ke belakang, tahan kontraksi, turunkan perlahan.",
+    "videoList": [],
+    "tags": ["upper", "back", "mid-back", "upper-back", "rear-delts", "biceps", "pull", "dumbbell"]
+  },
+  {
+    "name": "Machine Row (Seated)",
+    "targetMuscles": ["Mid Back", "Lats", "Biceps"],
+    "description": "Row di mesin dengan jalur gerak stabil. Fokus menarik dengan siku dan jaga bahu tidak naik ke telinga.",
+    "videoList": [],
+    "tags": ["upper", "back", "mid-back", "lats", "biceps", "pull", "machine"]
+  },
+  {
+    "name": "Wide-Grip Lat Pulldown",
+    "targetMuscles": ["Lats", "Upper Back", "Biceps"],
+    "description": "Pulldown grip lebar untuk menekankan lat dan upper back. Tarik ke dada atas, kontrol saat naik.",
+    "videoList": [],
+    "tags": ["upper", "back", "lats", "upper-back", "biceps", "pull", "cable", "machine"]
+  },
+  {
+    "name": "Neutral-Grip Lat Pulldown",
+    "targetMuscles": ["Lats", "Upper Back", "Biceps"],
+    "description": "Pulldown dengan grip netral (V-handle/parallel). Biasanya lebih nyaman untuk siku dan bahu.",
+    "videoList": [],
+    "tags": ["upper", "back", "lats", "upper-back", "biceps", "pull", "cable", "machine"]
+  },
+  {
+    "name": "Dumbbell Pullover",
+    "targetMuscles": ["Lats", "Chest", "Serratus"],
+    "description": "Berbaring di bench, turunkan dumbbell ke belakang kepala sampai terasa stretch, lalu tarik kembali. Jaga siku sedikit menekuk.",
+    "videoList": [],
+    "tags": ["upper", "back", "lats", "chest", "serratus", "pull", "dumbbell"]
+  },
+  {
+    "name": "Cable Pullover (Straight-Arm)",
+    "targetMuscles": ["Lats"],
+    "description": "Varian pullover kabel dengan lengan hampir lurus. Fokus depresi scapula dan kontraksi lat.",
+    "videoList": [],
+    "tags": ["upper", "back", "lats", "isolation", "pull", "cable"]
+  },
+  {
+    "name": "Scapular Pull-Up",
+    "targetMuscles": ["Lats", "Lower Traps", "Upper Back"],
+    "description": "Dari posisi gantung, lakukan gerakan depresi scapula (bahu turun) tanpa menekuk siku. Bagus untuk kontrol bahu.",
+    "videoList": [],
+    "tags": ["upper", "back", "lats", "upper-back", "pull", "bodyweight", "prehab"]
+  },
+  {
+    "name": "Band Pull-Apart",
+    "targetMuscles": ["Rear Delts", "Upper Back"],
+    "description": "Tarik band dari depan dada sampai lengan terbuka. Fokus pada rear delts dan retraksi scapula.",
+    "videoList": [],
+    "tags": ["upper", "shoulders", "rear-delts", "upper-back", "pull", "prehab"]
+  },
+  {
+    "name": "External Rotation (Cable/Band)",
+    "targetMuscles": ["Rotator Cuff", "Rear Delts"],
+    "description": "Rotasi luar bahu dengan siku menempel tubuh. Gerak kecil terkontrol, bagus untuk kesehatan bahu.",
+    "videoList": [],
+    "tags": ["upper", "shoulders", "rotator-cuff", "rear-delts", "prehab", "cable"]
+  },
+  {
+    "name": "Internal Rotation (Cable/Band)",
+    "targetMuscles": ["Rotator Cuff"],
+    "description": "Rotasi dalam bahu dengan kabel/band. Gunakan beban ringan dan kontrol penuh.",
+    "videoList": [],
+    "tags": ["upper", "shoulders", "rotator-cuff", "prehab", "cable"]
+  },
+
+  {
+    "name": "Smith Machine Bench Press",
+    "targetMuscles": ["Chest", "Triceps", "Front Delts"],
+    "description": "Bench press di Smith machine dengan jalur tetap. Cocok untuk fokus otot dan aksesori setelah compound utama.",
+    "videoList": [],
+    "tags": ["upper", "chest", "triceps", "shoulders", "push", "machine"]
+  },
+  {
+    "name": "Machine Chest Press",
+    "targetMuscles": ["Chest", "Triceps", "Front Delts"],
+    "description": "Chest press di mesin untuk gerak stabil dan aman. Atur kursi agar handle sejajar mid-chest.",
+    "videoList": [],
+    "tags": ["upper", "chest", "triceps", "shoulders", "push", "machine"]
+  },
+  {
+    "name": "Cable Press (Standing)",
+    "targetMuscles": ["Chest", "Triceps", "Front Delts", "Core"],
+    "description": "Dorong handle kabel dari posisi setinggi dada. Core aktif untuk menahan rotasi dan menjaga stabilitas.",
+    "videoList": [],
+    "tags": ["upper", "chest", "triceps", "shoulders", "core", "push", "cable"]
+  },
+  {
+    "name": "Push-Up (Incline)",
+    "targetMuscles": ["Chest", "Triceps", "Front Delts", "Core"],
+    "description": "Push-up dengan tangan di permukaan lebih tinggi untuk memudahkan. Cocok pemula atau finisher.",
+    "videoList": [],
+    "tags": ["upper", "chest", "triceps", "shoulders", "core", "push", "bodyweight"]
+  },
+  {
+    "name": "Push-Up (Decline)",
+    "targetMuscles": ["Upper Chest", "Shoulders", "Triceps", "Core"],
+    "description": "Push-up dengan kaki lebih tinggi untuk menekankan upper chest dan bahu. Jaga badan tetap lurus.",
+    "videoList": [],
+    "tags": ["upper", "chest", "upper-chest", "shoulders", "triceps", "core", "push", "bodyweight"]
+  },
+
+  {
+    "name": "Machine Shoulder Press",
+    "targetMuscles": ["Shoulders", "Triceps"],
+    "description": "Shoulder press di mesin untuk stabilitas. Jaga punggung tidak terlalu melengkung dan kontrol tempo.",
+    "videoList": [],
+    "tags": ["upper", "shoulders", "triceps", "push", "machine"]
+  },
+  {
+    "name": "Cable Y-Raise",
+    "targetMuscles": ["Lower Traps", "Upper Back", "Shoulders"],
+    "description": "Angkat kabel membentuk huruf Y untuk aktivasi lower traps dan stabilitas scapula. Beban ringan, kontrol ketat.",
+    "videoList": [],
+    "tags": ["upper", "back", "upper-back", "shoulders", "pull", "prehab", "cable"]
+  },
+
+  {
+    "name": "EZ Bar Curl",
+    "targetMuscles": ["Biceps", "Forearms"],
+    "description": "Curl dengan EZ bar untuk mengurangi stress pergelangan. Jaga siku tetap dan hindari ayunan.",
+    "videoList": [],
+    "tags": ["upper", "biceps", "forearms", "pull", "barbell"]
+  },
+  {
+    "name": "Concentration Curl",
+    "targetMuscles": ["Biceps"],
+    "description": "Curl satu tangan dengan siku bertumpu di paha untuk isolasi biceps. Kontrol penuh dan gerak bersih.",
+    "videoList": [],
+    "tags": ["upper", "biceps", "isolation", "dumbbell", "pull"]
+  },
+  {
+    "name": "Reverse Curl (EZ Bar)",
+    "targetMuscles": ["Forearms", "Brachialis", "Biceps"],
+    "description": "Curl dengan grip pronasi untuk menekankan forearms dan brachialis. Beban moderat, kontrol ketat.",
+    "videoList": [],
+    "tags": ["upper", "forearms", "biceps", "pull", "barbell"]
+  },
+  {
+    "name": "Wrist Curl",
+    "targetMuscles": ["Forearms"],
+    "description": "Curl pergelangan dengan lengan bawah bertumpu. Gerak pendek dan terkontrol.",
+    "videoList": [],
+    "tags": ["upper", "forearms", "isolation"]
+  },
+  {
+    "name": "Reverse Wrist Curl",
+    "targetMuscles": ["Forearms"],
+    "description": "Ekstensi pergelangan untuk melatih sisi atas forearms. Gunakan beban ringan dan repetisi terkontrol.",
+    "videoList": [],
+    "tags": ["upper", "forearms", "isolation"]
+  },
+
+  {
+    "name": "Hack Squat",
+    "targetMuscles": ["Quads", "Glutes"],
+    "description": "Squat di hack machine untuk fokus quads. Jaga punggung menempel pad dan kontrol kedalaman.",
+    "videoList": [],
+    "tags": ["lower", "quads", "glutes", "compound", "machine"]
+  },
+  {
+    "name": "Smith Machine Squat",
+    "targetMuscles": ["Quads", "Glutes"],
+    "description": "Squat di Smith untuk jalur stabil. Atur posisi kaki agar nyaman dan hindari lutut masuk ke dalam.",
+    "videoList": [],
+    "tags": ["lower", "quads", "glutes", "compound", "machine"]
+  },
+  {
+    "name": "Box Squat",
+    "targetMuscles": ["Quads", "Glutes", "Core"],
+    "description": "Squat duduk ringan di box sebagai patokan kedalaman. Jaga kontrol dan jangan 'jatuh' ke box.",
+    "videoList": [],
+    "tags": ["lower", "quads", "glutes", "core", "compound"]
+  },
+  {
+    "name": "Sissy Squat",
+    "targetMuscles": ["Quads"],
+    "description": "Gerakan menekankan quads dengan lutut maju dan badan condong ke belakang. Mulai dengan range kecil dan hati-hati.",
+    "videoList": [],
+    "tags": ["lower", "quads", "isolation", "bodyweight"]
+  },
+  {
+    "name": "Cable Pull-Through",
+    "targetMuscles": ["Glutes", "Hamstrings"],
+    "description": "Hip hinge menggunakan kabel dari belakang. Dorong pinggul ke belakang lalu maju hingga glutes kontraksi.",
+    "videoList": [],
+    "tags": ["lower", "glutes", "hamstrings", "posterior-chain", "compound", "cable"]
+  },
+  {
+    "name": "Good Morning (Barbell)",
+    "targetMuscles": ["Hamstrings", "Glutes", "Lower Back"],
+    "description": "Hip hinge dengan bar di punggung. Beban ringan–sedang, punggung netral, fokus posterior chain.",
+    "videoList": [],
+    "tags": ["lower", "hamstrings", "glutes", "lower-back", "posterior-chain", "compound", "barbell"]
+  },
+  {
+    "name": "Single-Leg Romanian Deadlift",
+    "targetMuscles": ["Hamstrings", "Glutes", "Core"],
+    "description": "RDL satu kaki untuk keseimbangan dan kontrol pinggul. Jaga pinggul tetap sejajar, turunkan perlahan.",
+    "videoList": [],
+    "tags": ["lower", "hamstrings", "glutes", "core", "compound", "dumbbell"]
+  },
+  {
+    "name": "Glute Kickback (Cable)",
+    "targetMuscles": ["Glutes"],
+    "description": "Kickback kabel untuk isolasi glute. Fokus ekstensi pinggul tanpa melengkungkan punggung.",
+    "videoList": [],
+    "tags": ["lower", "glutes", "isolation", "cable"]
+  },
+  {
+    "name": "Hip Abduction (Machine)",
+    "targetMuscles": ["Glute Medius", "Glutes"],
+    "description": "Abduksi pinggul di mesin untuk menekankan glute medius. Kontrol penuh dan tahan di puncak.",
+    "videoList": [],
+    "tags": ["lower", "glutes", "glute-medius", "isolation", "machine"]
+  },
+  {
+    "name": "Hip Adduction (Machine)",
+    "targetMuscles": ["Adductors"],
+    "description": "Adduksi pinggul di mesin untuk melatih otot paha bagian dalam. Gerak terkontrol, jangan memantul.",
+    "videoList": [],
+    "tags": ["lower", "adductors", "isolation", "machine"]
+  },
+  {
+    "name": "Cossack Squat",
+    "targetMuscles": ["Adductors", "Quads", "Glutes"],
+    "description": "Squat ke samping bergantian untuk mobilitas dan kekuatan adduktor. Jaga kaki yang lurus tetap menempel tumit.",
+    "videoList": [],
+    "tags": ["lower", "adductors", "quads", "glutes", "mobility", "bodyweight"]
+  },
+  {
+    "name": "Tibialis Raise",
+    "targetMuscles": ["Tibialis Anterior"],
+    "description": "Angkat ujung kaki ke atas (dorsiflexion) untuk melatih tibialis. Bisa di dinding atau alat tib bar.",
+    "videoList": [],
+    "tags": ["lower", "calves", "tibialis", "isolation"]
+  },
+  {
+    "name": "Donkey Calf Raise",
+    "targetMuscles": ["Calves"],
+    "description": "Calf raise posisi pinggul tertekuk untuk menekankan gastrocnemius. Gunakan range penuh dan kontrol.",
+    "videoList": [],
+    "tags": ["lower", "calves", "isolation"]
+  },
+
+  {
+    "name": "Pallof Press",
+    "targetMuscles": ["Core", "Obliques"],
+    "description": "Tekan kabel/band ke depan sambil menahan rotasi. Bagus untuk anti-rotation dan stabilitas core.",
+    "videoList": [],
+    "tags": ["core", "obliques", "anti-rotation", "cable"]
+  },
+  {
+    "name": "Cable Woodchop (High-to-Low)",
+    "targetMuscles": ["Obliques", "Core"],
+    "description": "Tarik kabel diagonal dari atas ke bawah melintasi tubuh. Kontrol dan putar torso secukupnya.",
+    "videoList": [],
+    "tags": ["core", "obliques", "rotation", "cable"]
+  },
+  {
+    "name": "Cable Woodchop (Low-to-High)",
+    "targetMuscles": ["Obliques", "Core"],
+    "description": "Tarik kabel dari bawah ke atas melintasi tubuh. Fokus kontrol, jangan mengayun.",
+    "videoList": [],
+    "tags": ["core", "obliques", "rotation", "cable"]
+  },
+  {
+    "name": "Ab Wheel Rollout",
+    "targetMuscles": ["Abs", "Core", "Lats"],
+    "description": "Rollout dengan ab wheel untuk anti-extension core. Mulai dari range pendek dan jaga pinggang tidak melengkung.",
+    "videoList": [],
+    "tags": ["core", "abs", "anti-extension", "bodyweight"]
+  },
+  {
+    "name": "Knee Raise (Captain's Chair)",
+    "targetMuscles": ["Abs", "Hip Flexors"],
+    "description": "Angkat lutut ke arah dada pada captain chair. Kurangi ayunan dan fokus kompresi perut.",
+    "videoList": [],
+    "tags": ["core", "abs", "upper", "machine"]
+  },
+  {
+    "name": "Machine Crunch",
+    "targetMuscles": ["Abs"],
+    "description": "Crunch di mesin untuk isolasi abs dengan beban. Fokus menggulung tulang rusuk ke arah pinggul.",
+    "videoList": [],
+    "tags": ["core", "abs", "machine"]
+  }
+]

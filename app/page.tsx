@@ -1,65 +1,126 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { MobileShell } from "../components/MobileShell";
+import { DayCard } from "../components/DayCard";
+import { useGymContext } from "../contexts/GymContext";
+import { useMemo } from "react";
+
+const WEEK_DAYS = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+];
+
+export default function HomePage() {
+  const router = useRouter();
+  const { plans, templates, sessions } = useGymContext();
+  const activePlan = plans.find((plan) => plan.isActive);
+
+  const todayIndex = useMemo(() => (new Date().getDay() + 6) % 7, []);
+  const todayDate = useMemo(() => new Date().toISOString().split("T")[0], []);
+  const todayPlanDay = activePlan?.week?.[todayIndex];
+  const todayTemplate = templates.find(
+    (tpl) => tpl.id === todayPlanDay?.templateId,
+  );
+  const activeSession = sessions.find(
+    (session) =>
+      session.planId === activePlan?.id &&
+      session.status === "in_progress" &&
+      session.templateId === todayTemplate?.id &&
+      session.date === todayDate,
+  );
+
+  const handleStart = (dayIndex: number) => {
+    if (!activePlan) return;
+    router.push(`/workout/start?day=${dayIndex}&planId=${activePlan.id}`);
+  };
+
+  const handleContinue = (sessionId: string) => {
+    router.push(`/workout/session/${sessionId}`);
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+    <MobileShell
+      title="Gym Tracker"
+      subtitle={
+        activePlan
+          ? `Active plan: ${activePlan.name}`
+          : "Buat plan latihan untuk mulai"
+      }
+    >
+      <section className="space-y-3">
+        <h2 className="text-base font-semibold">Today</h2>
+        <div className="space-y-2">
+          {activePlan ? (
+            <DayCard
+              dayLabel={WEEK_DAYS[todayIndex]}
+              type={todayPlanDay?.type ?? "rest"}
+              templateName={todayTemplate?.name}
+              ctaLabel={
+                todayPlanDay?.type === "workout"
+                  ? activeSession
+                    ? "Lanjutkan"
+                    : todayTemplate
+                    ? "Start workout"
+                    : "Assign template"
+                  : undefined
+              }
+              onStart={() =>
+                activeSession
+                  ? handleContinue(activeSession.id)
+                  : handleStart(todayIndex)
+              }
+              statusText={todayPlanDay?.type === "workout" && todayTemplate ? "Ready" : undefined}
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          ) : (
+            <div className="rounded-2xl border border-zinc-200 bg-white p-4 text-sm text-zinc-600">
+              Belum ada plan aktif. <Link href="/plans" className="font-semibold text-sky-600">Buat plan sekarang</Link>
+            </div>
+          )}
         </div>
-      </main>
-    </div>
+      </section>
+
+      {activePlan && (
+        <section className="space-y-3">
+          <div className="flex items-center justify-between">
+            <h2 className="text-base font-semibold">Minggu ini</h2>
+            <Link href={`/plans/${activePlan.id}`} className="text-sm font-semibold text-sky-600">
+              Lihat detail
+            </Link>
+          </div>
+          <div className="space-y-3">
+            {activePlan.week.map((day) => {
+              const template = templates.find((tpl) => tpl.id === day.templateId);
+              const dayLabel =
+                day.index === todayIndex
+                  ? `${WEEK_DAYS[day.index]} • Today`
+                  : WEEK_DAYS[day.index];
+              return (
+                <DayCard
+                  key={day.index}
+                  dayLabel={dayLabel}
+                  type={day.type}
+                  templateName={template?.name}
+                  ctaLabel={day.type === "workout" && template ? "Start" : undefined}
+                  onStart={() => handleStart(day.index)}
+                />
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      {!activePlan && (
+        <div className="rounded-2xl border border-dashed border-zinc-300 bg-white/70 p-4 text-sm text-zinc-600">
+          <p>Untuk mulai, buat minimal 2 template lalu buat plan di halaman Plan.</p>
+        </div>
+      )}
+    </MobileShell>
   );
 }
