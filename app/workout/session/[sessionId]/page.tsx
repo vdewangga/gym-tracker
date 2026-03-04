@@ -1,6 +1,6 @@
 "use client";
 
-import { ChangeEvent } from "react";
+import { ChangeEvent, useMemo } from "react";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { MobileShell } from "@/components/MobileShell";
@@ -54,11 +54,36 @@ export default function WorkoutSessionPage() {
     router.push("/history");
   };
 
+  const previousExerciseStats = useMemo(() => {
+    if (!session) return new Map<string, { weight?: number; reps?: number; sets?: number; date: string }>();
+    const historyMap = new Map<string, { weight?: number; reps?: number; sets?: number; date: string }>();
+    const completedSessions = sessions
+      .filter((candidate) => candidate.status === "done" && candidate.id !== session.id)
+      .sort((a, b) => b.date.localeCompare(a.date));
+
+    completedSessions.forEach((completed) => {
+      completed.items.forEach((item) => {
+        if (!historyMap.has(item.name)) {
+          historyMap.set(item.name, {
+            weight: item.weight,
+            reps: item.reps,
+            sets: item.sets,
+            date: completed.date,
+          });
+        }
+      });
+    });
+
+    return historyMap;
+  }, [sessions, session]);
+
   return (
     <MobileShell showBack title="Workout" subtitle={template?.name ?? "-"}>
       <div className="space-y-4">
-        {session.items.map((item) => (
-          <div key={item.exerciseId} className="space-y-2 rounded-2xl border border-zinc-200 bg-white px-4 py-3">
+        {session.items.map((item) => {
+          const history = previousExerciseStats.get(item.name);
+          return (
+            <div key={item.exerciseId} className="space-y-2 rounded-2xl border border-zinc-200 bg-white px-4 py-3">
             <div className="flex flex-col gap-3">
               <div className="flex items-center justify-between">
                 <Link
@@ -77,8 +102,15 @@ export default function WorkoutSessionPage() {
                 </label>
               </div>
               <div className="grid gap-2 text-sm text-zinc-600 sm:grid-cols-3">
-                <label className="flex flex-col text-xs uppercase tracking-[0.2em] text-zinc-400">
-                  Weight (kg)
+                <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.2em] text-zinc-400">
+                  <div className="flex items-center justify-between text-[10px]">
+                    <span>Weight (kg)</span>
+                    {history?.weight !== undefined && (
+                      <span className="text-[9px] text-zinc-400">
+                        Terakhir: {history.weight} kg
+                      </span>
+                    )}
+                  </div>
                   <input
                     type="number"
                     min={0}
@@ -94,8 +126,15 @@ export default function WorkoutSessionPage() {
                     className="mt-1 rounded-2xl border border-zinc-200 bg-zinc-50 px-3 py-1 text-sm"
                   />
                 </label>
-                <label className="flex flex-col text-xs uppercase tracking-[0.2em] text-zinc-400">
-                  Sets
+                <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.2em] text-zinc-400">
+                  <div className="flex items-center justify-between text-[10px]">
+                    <span>Sets</span>
+                    {history?.sets !== undefined && (
+                      <span className="text-[9px] text-zinc-400">
+                        Terakhir: {history.sets} set
+                      </span>
+                    )}
+                  </div>
                   <input
                     type="number"
                     min={0}
@@ -111,8 +150,15 @@ export default function WorkoutSessionPage() {
                     className="mt-1 rounded-2xl border border-zinc-200 bg-zinc-50 px-3 py-1 text-sm"
                   />
                 </label>
-                <label className="flex flex-col text-xs uppercase tracking-[0.2em] text-zinc-400">
-                  Reps
+                <label className="flex flex-col gap-1 text-xs uppercase tracking-[0.2em] text-zinc-400">
+                  <div className="flex items-center justify-between text-[10px]">
+                    <span>Reps</span>
+                    {history?.reps !== undefined && (
+                      <span className="text-[9px] text-zinc-400">
+                        Terakhir: {history.reps} reps
+                      </span>
+                    )}
+                  </div>
                   <input
                     type="number"
                     min={0}
@@ -138,8 +184,9 @@ export default function WorkoutSessionPage() {
                 }
               />
             </div>
-          </div>
-        ))}
+            </div>
+          );
+        })}
         <PrimaryButton onClick={handleFinish}>Selesai</PrimaryButton>
       </div>
     </MobileShell>
