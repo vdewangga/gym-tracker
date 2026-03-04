@@ -18,10 +18,12 @@ export default function TemplateNewPage() {
   const [exercises, setExercises] = useState<ExerciseItem[]>([]);
   const [selectedExercise, setSelectedExercise] = useState("");
 
-  const suggestions = useMemo(
-    () => workoutData.filter((item) => !exercises.some((exercise) => exercise.name === item.name)),
-    [exercises],
-  );
+  const suggestions = useMemo(() => {
+    const filtered = workoutData.filter(
+      (item) => !exercises.some((exercise) => exercise.name === item.name),
+    );
+    return filtered.sort((a, b) => a.name.localeCompare(b.name));
+  }, [exercises]);
 
   const handleSave = () => {
     if (!name.trim() || exercises.length === 0) return;
